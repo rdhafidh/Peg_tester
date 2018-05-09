@@ -9,11 +9,21 @@
  
 # Beberapa  lisensi pihak ketiga
 =====================
+
  [Qt5](http://www.qt.io)  (LGPL V3)
+
  [cpp-peglib](https://github.com/yhirose/cpp-peglib) (MIT)
- [Google Breakpad] (https://chromium.googlesource.com/breakpad/breakpad) (BSD Like license ?)
- [QSimplesheet] (https://sourceforge.net/p/qsimplesheet/wiki/Home/) (GPL V3) (Dimodifikasi port ke versi Qt5)
- [QtXlsxWriter] (https://github.com/dbzhang800/QtXlsxWriter) (MIT)
- [Botan] (https://botan.randombit.net/) (BSD)
+
+ [Google Breakpad](https://chromium.googlesource.com/breakpad/breakpad) (BSD Like license ?)
+
+ [QSimplesheet](https://sourceforge.net/p/qsimplesheet/wiki/Home/) (GPL V3) (Dimodifikasi & porting ke versi Qt5)
+
+ [QtXlsxWriter](https://github.com/dbzhang800/QtXlsxWriter) (MIT)
+
+ [Botan](https://botan.randombit.net/) (BSD)
+
+ [Rapidjson](https://github.com/Tencent/rapidjson) (MIT)
+
+ [QtCSV](https://github.com/iamantony/qtcsv) (MIT)
  
-# Lisensi Aplikasi yakni GPL V3
+ **Lisensi Aplikasi yakni GPL V3**
