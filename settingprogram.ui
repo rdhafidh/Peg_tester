@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingProgram</class>
+ <widget class="QFrame" name="SettingProgram">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>pengaturan</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>pengaturan</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>program test</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="lineEdit_parserlint1">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_8">
+                  <property name="text">
+                   <string>Program parser test</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0" colspan="4">
+                 <widget class="QGroupBox" name="groupBox_aktif_benchmark">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="title">
+                   <string>Mode Benchmark</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>false</bool>
+                  </property>
+                  <property name="checked">
+                   <bool>false</bool>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_19">
+                   <item row="0" column="0">
+                    <layout class="QGridLayout" name="gridLayout_18">
+                     <item row="4" column="1">
+                      <widget class="QComboBox" name="comboBox_pengaturan_benchmark_satuan_benchmark">
+                       <item>
+                        <property name="text">
+                         <string>nano</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>mili</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>detik</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QCheckBox" name="checkBox_pengaturan_benchmark_export_file">
+                       <property name="text">
+                        <string>Export hasil test ke file excel</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLabel" name="label_14">
+                       <property name="text">
+                        <string>Satuan benchmark</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_4">
+                       <property name="text">
+                        <string>Format Data</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="lineEdit_input_data_export_phpmyadmin">
+                       <property name="readOnly">
+                        <bool>true</bool>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Input file data untuk di test, klik pada tombol kanan</string>
+                       </property>
+                       <property name="clearButtonEnabled">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="2">
+                      <widget class="QToolButton" name="toolButton_mode_benchmark_pilih_export_data">
+                       <property name="enabled">
+                        <bool>true</bool>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="icons.qrc">
+                         <normaloff>:/icons/document-open.png</normaloff>:/icons/document-open.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QComboBox" name="comboBox_benchmark_pilih_formatdata">
+                       <property name="enabled">
+                        <bool>true</bool>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>CSV</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>JSON</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_5">
+                       <property name="text">
+                        <string>Input Data Export Phpmyadmin</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QSpinBox" name="spinBox_pengaturan_benchmark_iterasi_test">
+                       <property name="minimum">
+                        <number>1</number>
+                       </property>
+                       <property name="maximum">
+                        <number>10</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_12">
+                       <property name="text">
+                        <string>Iterasi Test</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="text">
+                   <string>Pilih Mode Pengujian</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0" rowspan="2" colspan="4">
+                 <widget class="QGroupBox" name="groupBox_aktif_test">
+                  <property name="title">
+                   <string>Mode Test</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>false</bool>
+                  </property>
+                  <property name="checked">
+                   <bool>false</bool>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_13">
+                   <item row="0" column="0">
+                    <layout class="QGridLayout" name="gridLayout_12">
+                     <item row="0" column="0" colspan="2">
+                      <widget class="QTabWidget" name="tabWidget_test_manual_or_otomatis">
+                       <property name="currentIndex">
+                        <number>0</number>
+                       </property>
+                       <widget class="QWidget" name="tab_3">
+                        <attribute name="title">
+                         <string>Manual Test</string>
+                        </attribute>
+                        <layout class="QGridLayout" name="gridLayout_15">
+                         <item row="0" column="0">
+                          <layout class="QGridLayout" name="gridLayout_14">
+                           <item row="0" column="0" colspan="3">
+                            <widget class="QGroupBox" name="groupBox_mode_manual_test">
+                             <property name="title">
+                              <string>Aktifkan Mode Manual Test</string>
+                             </property>
+                             <property name="checkable">
+                              <bool>false</bool>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_22">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_20">
+                                <item row="3" column="0">
+                                 <widget class="QCheckBox" name="checkBox_manual_test_mode_verbose">
+                                  <property name="text">
+                                   <string>Mode verbose</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QLineEdit" name="lineEdit_manual_test_input_grammar">
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_6">
+                                  <property name="text">
+                                   <string>Input Grammar</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="1">
+                                 <widget class="QLineEdit" name="lineEdit_manual_test_input_file">
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="2" column="0">
+                                 <widget class="QCheckBox" name="checkBox_manual_test_tampilkan_ast">
+                                  <property name="text">
+                                   <string>Tampilkan Tekstual AST</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="2">
+                                 <widget class="QToolButton" name="toolButton_manual_test_input_file_test">
+                                  <property name="text">
+                                   <string/>
+                                  </property>
+                                  <property name="icon">
+                                   <iconset resource="icons.qrc">
+                                    <normaloff>:/icons/document-open.png</normaloff>:/icons/document-open.png</iconset>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="2">
+                                 <widget class="QToolButton" name="toolButton_manual_test_pilih_file_grammar">
+                                  <property name="text">
+                                   <string/>
+                                  </property>
+                                  <property name="icon">
+                                   <iconset resource="icons.qrc">
+                                    <normaloff>:/icons/document-open.png</normaloff>:/icons/document-open.png</iconset>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_7">
+                                  <property name="text">
+                                   <string>Input File Test</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="4" column="0">
+                                 <spacer name="verticalSpacer_3">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>40</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QComboBox" name="comboBox_mode_test_apakah_itu">
+                  <item>
+                   <property name="text">
+                    <string>Mode Benchmark</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Mode Test</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QToolButton" name="toolButton_parserlint1">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="icons.qrc">
+                    <normaloff>:/icons/document-open.png</normaloff>:/icons/document-open.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_simpan">
+            <property name="text">
+             <string>simpan</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_ok">
+            <property name="text">
+             <string>Cancel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

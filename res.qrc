@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>folder-48.png</file>
+        <file>edit_file-48.png</file>
+        <file>help-48.png</file>
+        <file>ic_assignment_turned_in_black_36dp.png</file>
+        <file>ic_exit_to_app_black_36dp.png</file>
+        <file>ic_trending_up_black_36dp.png</file>
+        <file>ic_report_black_36dp.png</file>
+        <file>ic_save_black_36dp.png</file>
+        <file>ic_skip_next_black_36dp.png</file>
+        <file>ic_skip_previous_black_36dp.png</file>
+        <file>ic_replay_black_36dp.png</file>
+    </qresource>
+</RCC>

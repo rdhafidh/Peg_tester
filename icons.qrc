@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/accessories-text-editor.png</file>
+        <file>icons/preferences-desktop-theme.png</file>
+        <file>icons/preferences-desktop-wallpaper.png</file>
+        <file>icons/system-file-manager.png</file>
+        <file>icons/document-open.png</file>
+        <file>icons/preferences-desktop-keyboard.png</file>
+        <file>icons/media-playback-start-rtl.png</file>
+        <file>icons/help-browser.png</file>
+        <file>icons/go-next.png</file>
+        <file>icons/go-previous.png</file>
+        <file>icons/view-refresh.png</file>
+    </qresource>
+</RCC>
