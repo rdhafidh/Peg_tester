@@ -803,6 +803,7 @@ void MainWindow::tampilPenggunaan() {
     return;
   }
 #endif
+ QMessageBox::information(this,tr("Mohon maaf"),tr("Fitur bantuan telah di-disabled karena urgensi kompatibilitas aplikasi dengan windows xp"),QMessageBox::Ok);
 }
 
 void MainWindow::versi() {

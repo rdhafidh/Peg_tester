@@ -1,11 +1,11 @@
 QT += core network gui-private
 QT += testlib
 CONFIG +=release 
-#CONFIG += console
+CONFIG += console
 CONFIG -= app_bundle
-DEFINES = 32BIT BUILDNOEXCELUI
+DEFINES = BIT32 BUILDNOEXCELUI
 include (xlsx/qtxlsx.pri)
-win32*{
+win32-msvc*{
 BOTANDIR=D:\masteraplikasi\transferh11nov\botangit\msvc
 CONFIG(debug,debug|release){
     INCLUDEPATH +=  $$BOTANDIR/debug/include
@@ -14,6 +14,14 @@ CONFIG(debug,debug|release){
     INCLUDEPATH +=  $$BOTANDIR/release/include
     LIBS += $$BOTANDIR/release/lib/botan.lib
 }
+}
+
+win32-g* {
+CONFIG += c++14
+QTINSTALLDIR= D:\masteraplikasi\qt\mingw32release
+BOTANDIR = D:\masteraplikasi\transferh11nov\botangit\mingw
+INCLUDEPATH += $$BOTANDIR/include $$BOTANDIR/include/botan-2 $$QTINSTALLDIR/include/QtGui/5.6.2/QtGui/private
+LIBS += $$BOTANDIR/lib/libbotan-2.a 
 }
 
 DEPLOY=
@@ -44,7 +52,7 @@ HEADERS += parserlint.h \
     benchmarkmanager.h \
     subsetexceltestsuite.h evalbase.h calculatorpeg.h testoverflow.h
 
-contains (DEFINES, 32BIT){
+contains (DEFINES, BIT32){
     win32-msvc*{
 	CONFIG(debug,debug|release){
 	DEPLOY.commands= windeployqt --debug --compiler-runtime -core -network D:\masteraplikasi\transferh11nov\qprocess\parserlint\32\vs\parserlint1_vs2015.exe && "copy /y $$BOTANDIR\debug\lib\botan.dll D:\masteraplikasi\transferh11nov\qprocess\parserlint\32\vs"

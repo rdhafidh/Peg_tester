@@ -2,7 +2,7 @@
 INCLUDEPATH += $$PWD/src
 INCLUDEPATH += .
 
-win32*{
+win32-msvc*{
 BOTANDIR=D:\masteraplikasi\transferh11nov\botangit\msvc
 CONFIG(debug,debug|release){
     INCLUDEPATH +=  $$BOTANDIR/debug/include
@@ -13,6 +13,13 @@ CONFIG(debug,debug|release){
 }
 
 DEFINES += ASKDEBUG
+}
+
+win32-g* {
+QTINSTALLDIR= D:\masteraplikasi\qt\mingw32release
+BOTANDIR = D:\masteraplikasi\transferh11nov\botangit\mingw
+INCLUDEPATH += $$BOTANDIR/include $$BOTANDIR/include/botan-2 $$QTINSTALLDIR/include/QtGui/5.6.2/QtGui/private
+LIBS += $$BOTANDIR/lib/libbotan-2.a 
 }
 
 SOURCES =  $$PWD/src/evalbase.cpp \

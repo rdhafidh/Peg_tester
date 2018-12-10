@@ -15,7 +15,7 @@ public:
      void startParser(const QString &prog, const QStringList &arg, const QString &sat);
     QByteArray datas()const {return m_data;}
     QString lastError()const { return m_error; }
-    constexpr double selama()const {return m_bench;}
+    double selama()const {return m_bench;}
 private Q_SLOTS:
     void handleError(QProcess::ProcessError e);
     void handleOutput();

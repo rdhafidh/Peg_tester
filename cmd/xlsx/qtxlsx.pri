@@ -3,9 +3,10 @@ DEPENDPATH += $$PWD
 
 #QT +=  gui-private
 #!build_xlsx_lib:DEFINES += XLSX_NO_LIB
-win32*{
+win32-msvc*{
 INCLUDEPATH +=D:\masteraplikasi\qt\msvc15qt56x32finalvc2\include\QtGui\5.6.2\QtGui\private
 }
+
 unix{
 INCLUDEPATH +=
 #D:\masteraplikasi\qt\msvc15qt56x32finalvc2\include\QtGui\5.6.1\QtGui\private
